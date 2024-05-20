@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelszo Generator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <input style="width: 46vh; font-size: medium;" maxlength="32" id="passDisplay" type="text"><br>
+    <input type="range" id="len" min="6" max="32" value="6" style="width: 46vh;">
+    <label id="display"for="len">6</label><br>
+
+    <label for="nagybetu">nagybetű</label>
+    <label class="switch">
+        <input type="checkbox" id="nagybetu">
+        <span class="slider round"></span>
+    </label>
+
+    <label for="szam">szám</label>
+    <label class="switch">
+        <input type="checkbox" id="szam">
+        <span class="slider round"></span>
+    </label>
+
+    <label for="spec">speciális karakter</label>
+    <label class="switch">
+        <input type="checkbox" id="spec">
+        <span class="slider round"></span>
+    </label>
+    <!-- ------- -->
+    <br><br>
+
+    <button id="gen">Generate</button>
+    <button id="copy">Copy</button>
+
+    <!-- javascript -->
+    <script src="main.js"></script>
+</body>
+</html>
